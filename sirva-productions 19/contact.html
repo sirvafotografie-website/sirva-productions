@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Sirva Productions</title>
+<meta name="description" content="Neem contact op met Sirva Productions voor video van je bruiloft, merk of evenement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+<link rel="apple-touch-icon" href="images/favicon-256.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="images/logo-cropped.png" alt="Sirva Productions" width="200" height="171"></a>
+    <button class="nav-toggle" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over.html">Over</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="voorwaarden.html">Voorwaarden</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero hero-sm">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h1>Contact</h1>
+    <p class="lead">Vertel kort wat je zoekt: datum, plek en wat voor opname het is. Ik reageer daarna met meer vragen of een voorstel.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+
+    <div class="contact-details">
+      <dl>
+        <dt>E-mail</dt>
+        <dd><a href="mailto:sirvaproductions@gmail.com">sirvaproductions@gmail.com</a></dd>
+
+        <dt>Telefoon</dt>
+        <dd><a href="tel:+31639178469">06 39 17 84 69</a></dd>
+
+        <dt>Instagram</dt>
+        <dd><a href="https://www.instagram.com/sirva_productions/" target="_blank" rel="noopener">@sirva_productions</a></dd>
+
+        <dt>Regio</dt>
+        <dd>Zuid-Holland</dd>
+      </dl>
+    </div>
+
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none">
+        <label>Niet invullen: <input name="bot-field"></label>
+      </p>
+
+      <label for="naam">Naam</label>
+      <input type="text" id="naam" name="naam" required>
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="type">Soort opdracht</label>
+      <input type="text" id="type" name="type" placeholder="Bruiloft, brandingvideo of evenement">
+
+      <label for="datum">Datum (indien bekend)</label>
+      <input type="text" id="datum" name="datum">
+
+      <label for="bericht">Bericht</label>
+      <textarea id="bericht" name="bericht" required></textarea>
+
+      <button type="submit" class="submit">Versturen</button>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>&copy; <span id="year"></span> Sirva Productions</div>
+    <nav class="footer-links">
+      <a href="contact.html">Contact</a>
+      <a href="voorwaarden.html">Algemene voorwaarden</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
